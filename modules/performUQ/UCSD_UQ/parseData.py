@@ -226,24 +226,12 @@ def parseDataFunction(dakotaJsonFile, logFile, tmpSimCenterDir, mainscriptDir):
             elif rv["distribution"] == "Lognormal":
                 # meanValue = rv["mean"]
                 # stdevValue = rv["stdDev"]
-<<<<<<< HEAD
-                
-                mu =  rv["lambda"]  
-                sig = rv["zeta"] 
-
-                #mu = np.log(
-                #    pow(meanValue, 2) / np.sqrt(pow(stdevValue, 2) + pow(meanValue, 2))
-                #)
-                #sig = np.sqrt(np.log(pow(stdevValue / meanValue, 2) + 1))
-                
-=======
                 # mu = np.log(
                 #     pow(meanValue, 2) / np.sqrt(pow(stdevValue, 2) + pow(meanValue, 2))
                 # )
                 # sig = np.sqrt(np.log(pow(stdevValue / meanValue, 2) + 1))
                 mu = rv["lambda"]
                 sigma = rv["zeta"]
->>>>>>> aakash/master
                 variablesList[ind]["Par1"].append(mu)
                 variablesList[ind]["Par2"].append(sigma)
                 variablesList[ind]["Par3"].append(None)
